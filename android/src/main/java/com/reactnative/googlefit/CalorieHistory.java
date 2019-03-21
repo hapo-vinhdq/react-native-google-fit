@@ -162,7 +162,8 @@ public class CalorieHistory {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                stepMap.putDouble("calorie", dp.getValue(field).asFloat() - basal);
+                //stepMap.putDouble("calorie", dp.getValue(field).asFloat() - basal);
+                stepMap.putDouble("calorie", dp.getValue(field).asFloat());
                 map.pushMap(stepMap);
             }
         }
